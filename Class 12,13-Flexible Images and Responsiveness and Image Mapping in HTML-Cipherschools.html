@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Images and Responsiveness in HTML</title>
+    <title>Flexible Images and Responsiveness and Image Mapping in HTML</title>
 </head>
 <body>
     <!-- Image tag -->
-    <img src="https://img.etimg.com/photo/msid-93652937,quality-100/istock
-    -1391408732.jpg" alt="Digit Transformation" width="1520px" height="690px">
+    <img src="Nikhil.jpg" alt="Digit Transformation" width="1520px" height="690px">
 
     <!-- Flexible Image tag  -->
 
@@ -29,6 +28,14 @@
         <source media="(max-width: 900px)" srcset="Nikhil1.jpg">
         <img src="Nikhil2.jpg" alt="Profile pic">
     </picture>
-    
+
+    <!-- Image Mapping -->
+
+    <img src="Library.jpg" alt="Profile picture" usemap="Studyspace">
+    <map name="Studyspace">
+        <area shape="rect" coords="34,44,270,150" alt="LPU Centeral library" href="www.google.com">
+        <area shape="rect" coords="290,172,333,250" alt="LPU Centeral library" href="Class 3-Different Type of Texts in HTML-CipherSchools.html">
+        <area shape="circle" coords="337,300,44" alt="LPU Centeral library" href="Class 5-Quotes in HTML-Cipherschools.html">
+    </map>
 </body>
 </html>
