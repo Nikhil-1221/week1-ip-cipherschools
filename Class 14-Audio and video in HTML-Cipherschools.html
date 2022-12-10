@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio and video in HTML</title>
+</head>
+<body>
+    <!-- Audio -->
+
+    <h1>Audio</h1>
+    <Audio controls src="Maan Meri Jaan.mp3"></Audio>
+                    <!-- or -->
+    <audio controls>
+        <source src="Ijazzat Hai.mp3">
+    </audio>
+
+    <!-- video -->
+
+    <h1>video</h1>
+    <video controls src="AI.mp4" width="100%"></video>
+                    <!-- or -->
+    <video controls width="100%">
+        <source src="Team work.mp4" type="">
+    </video>
+
+    <!-- Remove audio from video -->
+    <h1>Remove audio from video</h1>
+    <video controls src="AI.mp4" width="100%" muted></video>
+                    <!-- or -->
+    <video controls width="100%" muted>
+        <source src="Team work.mp4" type="">
+    </video>
+
+    <!-- play video in loop -->
+
+    <h1>play video in loop</h1>
+    <video controls src="AI.mp4" width="100%" loop></video>
+                    <!-- or -->
+    <video controls width="100%" loop>
+        <source src="Team work.mp4" type="">
+    </video>
+
+    <!-- Autoplay video in loop  -->
+
+    <h1>Autoplay video in loop</h1>
+    <video controls src="AI.mp4" width="100%" loop autoplay></video>
+                    <!-- or -->
+    <video controls width="100%" loop autoplay>
+        <source src="Team work.mp4" type="">.
+        
+    </video>
+
+    <!-- add subtitles in video -->
+
+    <h1>add subtitles in video</h1>
+    <video controls src="AI.mp4" width="100%" autoplay>
+        <track src=""
+            kind="subtitles"
+            label="english"
+            srclang="en"
+            default
+        >
+        <track src=""
+            kind="captions"
+            label="english"
+            srclang="en"
+            default
+        >
+    </video>
+                    <!-- or -->
+    <video controls width="100%" autoplay>
+        <source src="Team work.mp4" type="">
+        <track src=""
+            kind="subtitles"
+            label="english"
+            srclang="en"
+            default
+        >
+        <track src=""
+            kind="captions"
+            label="english"
+            srclang="en"
+            default
+        >
+        <!-- add more language -->
+        <track src=""
+            kind="captions"
+            label="Hindi"
+            srclang="en"
+            default
+        >
+
+    </video>
+</body>
+</html>
