@@ -7,12 +7,28 @@
     <title>Flexible Images and Responsiveness in HTML</title>
 </head>
 <body>
+    <!-- Image tag -->
     <img src="https://img.etimg.com/photo/msid-93652937,quality-100/istock
     -1391408732.jpg" alt="Digit Transformation" width="1520px" height="690px">
 
-    <img src="Nikhil.jpg" alt="Profile pic"
-        width="100%" height="100%" 
-    srcset="/Nikhil/small.jpg 480w, /Nikhil/medium.jpg 800w, /Nikhil/large.jpg 1200w"
+    <!-- Flexible Image tag  -->
+
+    <img src="Nikhil.jpg" alt="Profile pic" width="100%" height="100%"
+    srcset="Nikhil1.jpg 480w,
+            Nikhil2.jpg 800w,
+            Nikhil.jpg 1200w"
+    size="(max-width: 482px)240,
+            (max-width: 960px)480,
+            (max-width: 1440px)960,"
     >
+
+    <!-- Image change with different size of browser -->
+
+    <picture>
+        <source media="(max-width: 600px)" srcset="Nikhil.jpg">
+        <source media="(max-width: 900px)" srcset="Nikhil1.jpg">
+        <img src="Nikhil2.jpg" alt="Profile pic">
+    </picture>
+    
 </body>
 </html>
